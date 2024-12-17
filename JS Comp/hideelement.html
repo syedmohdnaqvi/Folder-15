@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Element visible</p>
+
+    <button onclick="hideelement()">Click to hide</button>
+    <button onclick="showelement()">Click to show</button>
+
+    <script>
+        function hideelement() {
+            let a = document.getElementById('demo');
+            a.style.display = "none";
+        }
+
+        function showelement() {
+            let b = document.getElementById('demo');
+            if (b.style.display == "none") {
+                b.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
